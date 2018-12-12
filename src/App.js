@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Game from './Game'
+
 // Pass the store
 import { connect } from 'react-redux';
 
@@ -10,12 +12,8 @@ class App extends Component {
     console.log(this.props.questions)
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-
-          </p>
-
-        </header>
+        {Game}
+        Test
       </div>
     );
   }
