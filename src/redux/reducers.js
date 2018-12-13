@@ -30,7 +30,7 @@ function questions(state=[], action){
             return state.map((question, i)=>{ // It gives question
                 // It give per loop an object
                return {
-                   ...questions,
+                   ...question,
                    // If the indexCurrentQuestion is i, cahnge, if not dejalo como está
                    // It assigns a certain value
                    userAnswer: i === action.payload.indexCurrentQuestion ?
