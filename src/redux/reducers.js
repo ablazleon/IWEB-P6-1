@@ -23,12 +23,23 @@ function indexCurrentQuestion(state=0, action = {}){
     }
 }
 
-function questions(state=questions, action){
+function questions(state=[], action){
     switch(action.type){
         case 'INTRODUCE_ANSWER':
-            let newState = Object.assign([], state);
-            newState[indexCurrentQuestion].userAnswer = currentUserAnswer;
-            return newState;
+            // It gives an array
+            return state.map((question, i)=>{ // It gives question
+                // It give per loop an object
+               return {
+                   ...questions,
+                   // If the indexCurrentQuestion is i, cahnge, if not dejalo como está
+                   // It assigns a certain value
+                   userAnswer: i === action.payload.indexCurrentQuestion ?
+                       action.payload.currentUserAnswer : question.userAnswer
+               }
+            });
+            // let newState = Object.assign([], state);
+            // newState[indexCurrentQuestion].userAnswer = currentUserAnswer;
+            // return newState;
         default:
             return state;
     }
