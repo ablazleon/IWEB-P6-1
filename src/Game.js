@@ -10,6 +10,7 @@ export default class Game extends React.Component {
         return(
             <div>
                 {this.props.currentQuestion.question}
+                <input type="text" value={this.props.currentQuestion.userAnswer || ''}/>
             </div>
         )
     }

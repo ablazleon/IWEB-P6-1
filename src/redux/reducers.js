@@ -23,8 +23,12 @@ function indexCurrentQuestion(state=0, action = {}){
     }
 }
 
-function questions(state=[], action = {}){
+function questions(state=questions, action){
     switch(action.type){
+        case 'INTRODUCE_ANSWER':
+            let newState = Object.assign([], state);
+            newState[indexCurrentQuestion].userAnswer = currentUserAnswer;
+            return newState;
         default:
             return state;
     }
