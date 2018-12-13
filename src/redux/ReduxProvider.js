@@ -3,7 +3,7 @@
 import { Provider } from 'react-redux';
 import GlobalState from './reducers.js';
 import { createStore } from 'redux';
-import React, { component } from 'react';
+import React from 'react';
 import App from '../App';
 
 // Import questions
@@ -18,8 +18,8 @@ export default class ReduxProvider extends React.Component{
         // State that allows
         this.initialState = {
             score: 0,           // Score while playing
-            finished: false,    // WHen pressed submit to pick teh answer
-            currentQuestion: 0,
+            finished: false,    // When pressed submit to pick teh answer
+            indexCurrentQuestion: 0,
             questions: [
                 ...questions
             ]

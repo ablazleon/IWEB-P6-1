@@ -16,7 +16,7 @@ function finished(state=false, action = {}){
     }
 }
 
-function currentQuestion(state=0, action = {}){
+function indexCurrentQuestion(state=0, action = {}){
     switch(action.type){
         default:
             return state;
@@ -33,7 +33,7 @@ function questions(state=[], action = {}){
 const GlobalState = (combineReducers({
     score,
     finished,
-    currentQuestion,
+    indexCurrentQuestion,
     questions
 }));
 

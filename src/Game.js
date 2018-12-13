@@ -6,9 +6,10 @@ export default class Game extends React.Component {
 
     }
     render(){
+        console.log('Game');
         return(
             <div>
-                Game
+                {this.props.currentQuestion.question}
             </div>
         )
     }
