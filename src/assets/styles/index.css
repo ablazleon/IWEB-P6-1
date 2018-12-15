@@ -17,3 +17,11 @@ code {
   display: flex;
   justify-content: space-around;
 }
+
+.clickable {
+  cursor: pointer;
+}
+
+.no_clickable {
+  cursor: not-allowed;
+}

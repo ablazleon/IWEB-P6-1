@@ -18,6 +18,7 @@
     si bien se encuentra aduacada la disposición, se propone cambiar la imagen de sitio
     respecto a la propuesta de organización inicial.
     2. Se usa felxbox para centrar los elementos.
+    3. Si no se puede pinchar sobre los botones, se configurara el cursor como not allowed.
   
   
 -----

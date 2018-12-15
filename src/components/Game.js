@@ -25,6 +25,8 @@ export default class Game extends React.Component {
                 />
                 <ActionBar
                     onChangeQuestion = {this.props.onChangeQuestion}
+                    currentIndex = {this.props.currentIndex}
+                    questionsLength = {this.props.questionsLength}
                 />
 
             </div>
