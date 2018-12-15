@@ -9,7 +9,7 @@ export const questions =[
 		"mime":"image/jpeg",
 		"url":"https://res.cloudinary.com/core-upm/image/upload/v1533288622/core/quiz2018/attachments/sgfjokgmrrtjibavxruz.jpg"},
 		"favourite":false,
-		"tips":[]},
+		"tips":["a", "b", "c"]},
 
 	{
 		"id":4,

@@ -1,4 +1,5 @@
 import React from 'react'
+import Tips from "./Tips";
 
 export default class Answer extends React.Component {
 
@@ -16,7 +17,7 @@ export default class Answer extends React.Component {
                 </div>
                 <div>
                     <h3> Pistas </h3>
-
+                    <Tips currentQuestion = {this.props.currentQuestion} />
                 </div>
             </div>
         )
