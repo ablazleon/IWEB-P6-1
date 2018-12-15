@@ -16,8 +16,11 @@ function finished(state=false, action = {}){
     }
 }
 
-function indexCurrentQuestion(state=0, action = {}){
+function indexCurrentQuestion(state=0, action ){
     switch(action.type){
+        case 'CHANGE_QUESTION':
+        // I want to incrase or decrese the index.
+            return (action.payload.change === 'nextQ') ? (++state) : (--state);
         default:
             return state;
     }
@@ -37,9 +40,7 @@ function questions(state=[], action){
                        action.payload.currentUserAnswer : question.userAnswer
                }
             });
-            // let newState = Object.assign([], state);
-            // newState[indexCurrentQuestion].userAnswer = currentUserAnswer;
-            // return newState;
+
         default:
             return state;
     }

@@ -12,18 +12,18 @@ export default class ActionBar extends React.Component {
             <div>
                <span>
                 <button>
-                    Submit
-                </button>
-               </span>
-
-                <span>
-                <button>
                     Previous
                 </button>
                </span>
 
                 <span>
                 <button>
+                    Submit
+                </button>
+               </span>
+
+                <span>
+                <button onClick = {() => {this.props.onChangeQuestion('nextQ');}}>
                     Next
                 </button>
                </span>

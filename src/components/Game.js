@@ -16,7 +16,9 @@ export default class Game extends React.Component {
                     currentQuestion={this.props.currentQuestion}
                     currentIndex = {this.props.currentIndex}
                 />
-                <ActionBar/>
+                <ActionBar
+
+                />
 
             </div>
         )
