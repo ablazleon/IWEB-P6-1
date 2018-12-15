@@ -10,8 +10,8 @@ export default class ActionBar extends React.Component {
         // console.log('It gets the onChangeQuestion in ActionBar');
         // console.log(this.props.onChangeQuestion);
 
-        console.log('Length of questions')
-        console.log(this.props.questionsLength);
+        // console.log('Length of questions')
+        // console.log(this.props.questionsLength);
 
         // If it's index is the first it disable the button
         return(
@@ -23,7 +23,7 @@ export default class ActionBar extends React.Component {
                     }
                 }
                 }
-                         className = {(this.props.currentIndex+1) === this.props.questionsLength ? "no_clickable" : "clickable"}>
+                     className = {(this.props.currentIndex) === 0 ? "no_clickable" : "clickable"}>
                     Previous
                 </button>
                </span>
