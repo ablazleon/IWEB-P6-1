@@ -17,7 +17,13 @@ export default class ActionBar extends React.Component {
         return(
             <div>
                <span>
-                <button  onClick = { () => {this.props.onChangeQuestion('previuosQ')}}>
+                <button  onClick ={() => {
+                    if ((this.props.currentIndex ) !== 0) {
+                        this.props.onChangeQuestion('previuosQ')
+                    }
+                }
+                }
+                         className = {(this.props.currentIndex+1) === this.props.questionsLength ? "no_clickable" : "clickable"}>
                     Previous
                 </button>
                </span>
