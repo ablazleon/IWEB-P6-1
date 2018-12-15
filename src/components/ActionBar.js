@@ -6,12 +6,12 @@ export default class ActionBar extends React.Component {
     //
     // }
     render(){
-        console.log('It gets the onChangeQuestion in ActionBar');
-        console.log(this.props.onChangeQuestion);
+        // console.log('It gets the onChangeQuestion in ActionBar');
+        // console.log(this.props.onChangeQuestion);
         return(
             <div>
                <span>
-                <button>
+                <button  onClick = { () => {this.props.onChangeQuestion('previuosQ')}}>
                     Previous
                 </button>
                </span>

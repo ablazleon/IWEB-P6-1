@@ -14,8 +14,8 @@ export default class Game extends React.Component {
         // console.log('It gets the onIntroduceAnswer in Game');
         // console.log(this.props.onIntroduceAnswer);
 
-        console.log('It gets the onChangeQuestion in Game');
-        console.log(this.props.onChangeQuestion);
+        // console.log('It gets the onChangeQuestion in Game');
+        // console.log(this.props.onChangeQuestion);
         return(
             <div>
                 <Content

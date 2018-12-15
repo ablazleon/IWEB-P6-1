@@ -7,8 +7,8 @@ export default class Question extends React.Component {
     // }
     render(){
 
-        console.log('indexCurrent');
-        console.log(this.props.currentIndex);
+        // console.log('indexCurrent');
+        // console.log(this.props.currentIndex);
 
         return(
             <div>

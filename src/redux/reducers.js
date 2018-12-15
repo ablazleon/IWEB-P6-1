@@ -31,8 +31,8 @@ function questions(state=[], action){
     switch(action.type){
         case 'INTRODUCE_ANSWER':
             // It gives an array
-            console.log("currentUserAnswer")
-            console.log(action.payload.currentUserAnswer)
+            // console.log("currentUserAnswer")
+            // console.log(action.payload.currentUserAnswer)
             return state.map((question, i)=>{ // It gives question
                 // It give per loop an object
                return {
