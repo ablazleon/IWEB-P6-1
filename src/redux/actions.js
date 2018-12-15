@@ -8,8 +8,8 @@ export function introduceAnswer(currentUserAnswer, indexCurrentQuestion){
 
 export function changeQuestion(index, change){
     return{
-        Type: "CHANGE_QUESTION",
-        Payload: {index, change}
+        type: "CHANGE_QUESTION",
+        payload: {index, change}
     }
 }
 

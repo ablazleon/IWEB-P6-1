@@ -3,8 +3,10 @@ import React from 'react'
 export default class Answer extends React.Component {
 
     render(){
-        console.log('currentQuestion in Answer');
-        console.log(this.props.currentQuestion);
+        // console.log('currentQuestion in Answer');
+        // console.log(this.props.currentQuestion);
+        // console.log('It gets the onIntroduceAnswer in Answer');
+        // console.log(this.props.onIntroduceAnswer);
         return(
             <div>
                 <div>

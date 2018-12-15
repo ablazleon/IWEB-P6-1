@@ -6,8 +6,8 @@ export default class ActionBar extends React.Component {
     //
     // }
     render(){
-        console.log('It gets the currentQuestion in Game');
-        console.log(this.props.currentQuestion);
+        console.log('It gets the onChangeQuestion in ActionBar');
+        console.log(this.props.onChangeQuestion);
         return(
             <div>
                <span>
@@ -23,7 +23,7 @@ export default class ActionBar extends React.Component {
                </span>
 
                 <span>
-                <button onClick = {() => {this.props.onChangeQuestion('nextQ');}}>
+                <button onClick = { () => {this.props.onChangeQuestion('nextQ')}}>
                     Next
                 </button>
                </span>

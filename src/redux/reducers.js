@@ -20,6 +20,7 @@ function indexCurrentQuestion(state=0, action ){
     switch(action.type){
         case 'CHANGE_QUESTION':
         // I want to incrase or decrese the index.
+
             return (action.payload.change === 'nextQ') ? (++state) : (--state);
         default:
             return state;
@@ -30,6 +31,8 @@ function questions(state=[], action){
     switch(action.type){
         case 'INTRODUCE_ANSWER':
             // It gives an array
+            console.log("currentUserAnswer")
+            console.log(action.payload.currentUserAnswer)
             return state.map((question, i)=>{ // It gives question
                 // It give per loop an object
                return {

@@ -6,8 +6,10 @@ import "../assets/styles/index.css"
 export default class Content extends React.Component {
 
     render(){
-        console.log('It gets the currentQuestion in Content');
-        console.log(this.props.currentQuestion);
+        // console.log('It gets the currentQuestion in Content');
+        // console.log(this.props.currentQuestion);
+        // console.log('It gets the onIntroduceAnswer in Content');
+        // console.log(this.props.onIntroduceAnswerGame);
         return(
             <div className="flex-container">
                 <div>
@@ -20,6 +22,7 @@ export default class Content extends React.Component {
                     />
                     <Answer
                         currentQuestion={this.props.currentQuestion}
+                        onIntroduceAnswer = { this.props.onIntroduceAnswerGame}
                     />
                 </div>
             </div>
