@@ -1,3 +1,26 @@
+  
+  This project was done by **Hengxuan Ying** and **Adrián Blázquez León**
+  
+  It has been done the following tasks:
+
+  - [ ] Bajarse las preguntas del servidor.
+  - [ ] Mostar las preguntas en el interfaz web de una en una.
+  - [ ] Mostar la imagen asociada a la pregunta si la tiene.
+  - [ ] Mostrar en una lista los tips disponibles para cada pregunta si los tiene.
+  - [ ] Cambiar de pregunta al hacer click en los botones de siguiente/atrás.
+  - [ ] Permitir al usuario evaluar sus respuestas y calcular su puntuación.
+  - [ ] Desarrollar la lógica de cambiar de pregunta y evaluar las respuestas
+        utilizando Redux.
+  - [ ] Empaquetar la aplicación
+  - [ ] **1 punto** Personalización de los estilos   
+  
+    1. Se reflexiona sobre la "usabilidad" de la página al disponer los componentes
+    si bien se encuentra aduacada la disposición, se propone cambiar la imagen de sitio
+    respecto a la propuesta de organización inicial.
+  
+  
+-----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
