@@ -17,6 +17,7 @@
     1. Se reflexiona sobre la "usabilidad" de la página al disponer los componentes
     si bien se encuentra aduacada la disposición, se propone cambiar la imagen de sitio
     respecto a la propuesta de organización inicial.
+    2. Se usa felxbox para centrar los elementos.
   
   
 -----

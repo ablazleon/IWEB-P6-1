@@ -1,0 +1,15 @@
+import React from 'react'
+
+export default class Answer extends React.Component {
+
+    render(){
+
+        return(
+            <div>
+                <div>
+                    Answer
+                </div>
+            </div>
+        )
+    }
+}

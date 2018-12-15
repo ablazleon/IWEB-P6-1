@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 
 import Game from './Game'
 
 // Pass the store
 import { connect } from 'react-redux';
-import {introduceAnswer} from "./redux/actions";
+import {introduceAnswer} from "../redux/actions";
 
 
 class App extends Component {
@@ -19,9 +19,9 @@ class App extends Component {
 
 
   render() {
-    console.log(this.props)
+    console.log('Props in App')
+    console.log(this.props);
       // It is checked it is changed the first userAnswer
-      console.log(this.props.questions[0].userAnswer);
     //console.log(this.props.questions[this.props.indexCurrentQuestion])
       // In Game i say to create as props the question i want to handle
     return (
