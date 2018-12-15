@@ -26,8 +26,10 @@ class App extends Component {
       // In Game i say to create as props the question i want to handle
     return (
       <div className="App">
-        <Game currentQuestion={this.props.questions[this.props.indexCurrentQuestion]}
-         onIntroduceAnswer={(answer)=> {this.props.dispatch(introduceAnswer(answer, this.props.indexCurrentQuestion))}}  />
+        <Game
+            currentQuestion={this.props.questions[this.props.indexCurrentQuestion]}
+            currentIndex = {this.props.indexCurrentQuestion}
+            onIntroduceAnswer={(answer)=> {this.props.dispatch(introduceAnswer(answer, this.props.indexCurrentQuestion))}}  />
       </div>
     );
   }

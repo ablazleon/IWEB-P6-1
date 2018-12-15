@@ -14,8 +14,13 @@ export default class Content extends React.Component {
                     <Imagen/>
                 </div>
                 <div>
-                    <Question currentQuestion={this.props.currentQuestion}/>
-                    <Answer/>
+                    <Question
+                        currentIndex = {this.props.currentIndex}
+                        currentQuestion={this.props.currentQuestion}
+                    />
+                    <Answer
+                        currentQuestion={this.props.currentQuestion}
+                    />
                 </div>
             </div>
         )

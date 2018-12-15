@@ -11,7 +11,11 @@ export default class Game extends React.Component {
         console.log(this.props.currentQuestion);
         return(
             <div>
-                <Content currentQuestion={this.props.currentQuestion}/>
+                <Content
+                    currentQuestion={this.props.currentQuestion}
+                    currentIndex = {this.props.currentIndex}
+                />
+
             </div>
         )
     }

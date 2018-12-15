@@ -6,13 +6,14 @@ export default class Question extends React.Component {
     //
     // }
     render(){
-        console.log('currentQuestion in Question');
-        console.log(this.props.currentQuestion);
+
+        console.log('indexCurrent');
+        console.log(this.props.currentIndex);
+
         return(
             <div>
-                {this.props.currentQuestion.question}
-                <input type="text" value={this.props.currentQuestion.userAnswer || ''}
-                       onChange={(e)=>{this.props.onIntroduceAnswer(e.target.value);}}/>
+                <h1>Question {this.props.currentIndex + 1} </h1>
+                <h2>{this.props.currentQuestion.question} </h2>
             </div>
         )
     }
