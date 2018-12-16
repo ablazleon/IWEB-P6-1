@@ -13,7 +13,7 @@ export default class Content extends React.Component {
         return(
             <div className="flex-container">
                 <div>
-                    <Imagen/>
+                    <Imagen question={this.props.currentQuestion}/>
                 </div>
                 <div>
                     <Question

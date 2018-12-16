@@ -3,12 +3,10 @@ import React from 'react'
 export default class Imagen extends React.Component {
 
     render(){
-        //<img src={this.props.currentQuestion.url} alt='Quiz photo'>
         return(
             <div>
                 <div>
-
-                    Imagen
+                    <img src={this.props.question.attachment.url} alt={this.props.question.filename} width="500px"/>
                 </div>
             </div>
         )
