@@ -6,6 +6,7 @@ import Game from './Game'
 // Pass the store
 import { connect } from 'react-redux';
 import {changeQuestion, fetchState, introduceAnswer, submit} from "../redux/actions";
+import NavBar from "./NavBar";
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <NavBar/>
         <Game
             currentQuestion={this.props.questions[this.props.indexCurrentQuestion]}
             currentIndex = {this.props.indexCurrentQuestion}
