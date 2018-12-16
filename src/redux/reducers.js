@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import {FETCH} from "../assets/constants/constants";
 
 // auxiliar functions
 
@@ -60,7 +61,30 @@ function questions(state=[], action){
                        action.payload.currentUserAnswer : question.userAnswer
                }
             });
+        case 'FETCH_STATE_SUCCESS':
+            return action.state;
+        default:
+            return state;
+    }
+}
 
+function fetchReducer(state=FETCH, action) {
+    let newState;
+    switch (action.type) {
+        case 'FETCH_STATE_BEGIN':
+            newState = JSON.parse(JSON.stringify((state)));
+            newState.fetching = true;
+            return newState;
+        case 'FETCH_STATE_SUCCESS':
+            newState = JSON.parse(JSON.stringify((state)));
+            newState.fetching = false;
+            newState.finished = true;
+            return newState;
+        case 'FETCH_STATE_FAILURE':
+            newState = JSON.parse(JSON.stringify((state)));
+            newState.fetching = false;
+            newState.finished = true;
+            return newState;
         default:
             return state;
     }
@@ -70,7 +94,8 @@ const GlobalState = (combineReducers({
     score,
     finished,
     indexCurrentQuestion,
-    questions
+    questions,
+    fetch: fetchReducer
 }));
 
 export default GlobalState;

@@ -7,7 +7,9 @@ export default class Game extends React.Component {
     //     super(props);
     //
     // }
+
     render(){
+
         // console.log('It gets the currentQuestion in Game');
         // console.log(this.props.currentQuestion);
 
@@ -16,23 +18,34 @@ export default class Game extends React.Component {
 
         // console.log('It gets the onChangeQuestion in Game');
         // console.log(this.props.onChangeQuestion);
-        return(
-            <div>
-                <Content
-                    currentQuestion={this.props.currentQuestion}
-                    currentIndex = {this.props.currentIndex}
-                    onIntroduceAnswerGame = {this.props.onIntroduceAnswer}
-                    finished = {this.props.finished}
-                    score = {this.props.score}
-                />
-                <ActionBar
-                    onChangeQuestion = {this.props.onChangeQuestion}
-                    currentIndex = {this.props.currentIndex}
-                    questionsLength = {this.props.questionsLength}
-                    onSubmit = {this.props.onSubmit}
-                />
 
-            </div>
-        )
+        // console.log("The object fetch gets to game");
+        // console.log(this.props.fetch);
+
+        if(this.props.fetch.fetching){
+            return <h3> Wait while we fetch </h3>
+        } else if(this.props.fetch.fetching === false && this.props.fetch.error){
+            console.log(this.props.fetch.error);
+            return <h3> Error getting state from server </h3>
+        } else {
+            return(
+                <div>
+                    <Content
+                        currentQuestion={this.props.currentQuestion}
+                        currentIndex = {this.props.currentIndex}
+                        onIntroduceAnswerGame = {this.props.onIntroduceAnswer}
+                        finished = {this.props.finished}
+                        score = {this.props.score}
+                    />
+                    <ActionBar
+                        onChangeQuestion = {this.props.onChangeQuestion}
+                        currentIndex = {this.props.currentIndex}
+                        questionsLength = {this.props.questionsLength}
+                        onSubmit = {this.props.onSubmit}
+                    />
+                </div>
+            )
+        }
+
     }
 }

@@ -14,9 +14,6 @@ export default class Content extends React.Component {
         return(
             <div className="flex-container">
                 <div>
-                    <Imagen question={this.props.currentQuestion}/>
-                </div>
-                <div>
                     <Question
                         currentIndex = {this.props.currentIndex}
                         currentQuestion={this.props.currentQuestion}
@@ -29,6 +26,9 @@ export default class Content extends React.Component {
                         score = {this.props.score}
                         finished = {this.props.finished}
                     />
+                </div>
+                <div>
+                    <Imagen question={this.props.currentQuestion}/>
                 </div>
             </div>
         )

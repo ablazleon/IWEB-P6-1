@@ -3,24 +3,25 @@
   
   It has been done the following tasks:
 
-  - [ ] Bajarse las preguntas del servidor.
-  - [ ] Mostar las preguntas en el interfaz web de una en una.
-  - [ ] Mostar la imagen asociada a la pregunta si la tiene.
+  - [x] Bajarse las preguntas del servidor.
+  - [x] Mostar las preguntas en el interfaz web de una en una.
+  - [x] Mostar la imagen asociada a la pregunta si la tiene.
   - [ ] Mostrar en una lista los tips disponibles para cada pregunta si los tiene.
-  - [ ] Cambiar de pregunta al hacer click en los botones de siguiente/atrás.
-  - [ ] Permitir al usuario evaluar sus respuestas y calcular su puntuación.
-  - [ ] Desarrollar la lógica de cambiar de pregunta y evaluar las respuestas
+  - [x] Cambiar de pregunta al hacer click en los botones de siguiente/atrás.
+  - [x] Permitir al usuario evaluar sus respuestas y calcular su puntuación.
+  - [x] Desarrollar la lógica de cambiar de pregunta y evaluar las respuestas
         utilizando Redux.
   - [ ] Empaquetar la aplicación
-  - [ ] **1 punto** Personalización de los estilos   
+  - [x] **1 punto** Personalización de los estilos   
   
     1. Se reflexiona sobre la "usabilidad" de la página al disponer los componentes
     si bien se encuentra aduacada la disposición, se propone cambiar la imagen de sitio
     respecto a la propuesta de organización inicial.
     2. Se usa felxbox para centrar los elementos.
     3. Si no se puede pinchar sobre los botones, se configurara el cursor como not allowed.
-  
-  
+    4. El producto accede a más mercado si se encuentra en inglés.
+    5. Se piensa en el "responsive design": se adapta el contenedor de las imágenes
+    en función de su resolución.
 -----
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

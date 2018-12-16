@@ -5,7 +5,8 @@ import Game from './Game'
 
 // Pass the store
 import { connect } from 'react-redux';
-import {changeQuestion, introduceAnswer, submit} from "../redux/actions";
+import {changeQuestion, fetchState, introduceAnswer, submit} from "../redux/actions";
+import NavBar from "./NavBar";
 
 
 class App extends Component {
@@ -17,6 +18,13 @@ class App extends Component {
     // }
 
 
+    componentDidMount(){
+        // console.log("Only fetch once");
+
+        // console.log("What it is fecthState?");
+        // console.log(fetchState());
+        this.props.dispatch(fetchState());
+    }
 
   render() {
     console.log('Props in App')
@@ -25,11 +33,14 @@ class App extends Component {
     //console.log(this.props.questions[this.props.indexCurrentQuestion])
       // In Game i say to create as props the question i want to handle
 
-      console.log('Length of questions')
-      console.log(this.props.questions.length);
+      // console.log('Length of questions')
+      // console.log(this.props.questions.length);
+
+
 
     return (
       <div className="App">
+        <NavBar/>
         <Game
             currentQuestion={this.props.questions[this.props.indexCurrentQuestion]}
             currentIndex = {this.props.indexCurrentQuestion}
@@ -39,6 +50,7 @@ class App extends Component {
             finished = {this.props.finished}
             score = {this.props.score}
             onSubmit = {()=>this.props.dispatch(submit(this.props.questions))}
+            fetch = {this.props.fetch}
         />
       </div>
     );
