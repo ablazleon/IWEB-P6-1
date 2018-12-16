@@ -1,12 +1,20 @@
 import React from 'react'
 import Content from "./Content";
 import ActionBar from "./ActionBar";
+import {fetchState} from "../redux/actions";
 
 export default class Game extends React.Component {
     // constructor(props) {
     //     super(props);
     //
     // }
+
+
+    componentDidMount(){
+        // console.log("Only fetch once");
+        this.props.dispatch(fetchState());
+    }
+
     render(){
         // console.log('It gets the currentQuestion in Game');
         // console.log(this.props.currentQuestion);
@@ -16,6 +24,7 @@ export default class Game extends React.Component {
 
         // console.log('It gets the onChangeQuestion in Game');
         // console.log(this.props.onChangeQuestion);
+
         return(
             <div>
                 <Content
