@@ -10,12 +10,10 @@ export default class Game extends React.Component {
     // }
 
 
-    componentDidMount(){
-        // console.log("Only fetch once");
-        this.props.dispatch(fetchState());
-    }
+
 
     render(){
+
         // console.log('It gets the currentQuestion in Game');
         // console.log(this.props.currentQuestion);
 
@@ -24,6 +22,9 @@ export default class Game extends React.Component {
 
         // console.log('It gets the onChangeQuestion in Game');
         // console.log(this.props.onChangeQuestion);
+
+        console.log("The object fetch gets to game");
+        console.log(this.props.fetch);
 
         if(this.props.fetch.fetching){
             return <h3> Wait while we fetch </h3>
