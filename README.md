@@ -19,7 +19,7 @@
     respecto a la propuesta de organización inicial.
     2. Se usa felxbox para centrar los elementos.
     3. Si no se puede pinchar sobre los botones, se configurara el cursor como not allowed.
-  
+    4. El producto accede a más mercado si se encuentra en inglés.
   
 -----
 

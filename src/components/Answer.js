@@ -16,7 +16,7 @@ export default class Answer extends React.Component {
                            onChange={(e)=>{this.props.onIntroduceAnswer(e.target.value);}}/>
                 </div>
                 <div>
-                    <h3> Pistas </h3>
+                    <h3> Tips </h3>
                     <Tips currentQuestion = {this.props.currentQuestion} />
                 </div>
             </div>
