@@ -22,11 +22,14 @@ export default class Game extends React.Component {
                     currentQuestion={this.props.currentQuestion}
                     currentIndex = {this.props.currentIndex}
                     onIntroduceAnswerGame = {this.props.onIntroduceAnswer}
+                    finished = {this.props.finished}
+                    score = {this.props.score}
                 />
                 <ActionBar
                     onChangeQuestion = {this.props.onChangeQuestion}
                     currentIndex = {this.props.currentIndex}
                     questionsLength = {this.props.questionsLength}
+                    onSubmit = {this.props.onSubmit}
                 />
 
             </div>

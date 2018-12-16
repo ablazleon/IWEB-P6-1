@@ -2,6 +2,7 @@ import React from 'react'
 import Question from "./Question";
 import Answer from "./Answer";
 import Imagen from "./Image";
+import Score from './Score'
 import "../assets/styles/index.css"
 export default class Content extends React.Component {
 
@@ -23,6 +24,10 @@ export default class Content extends React.Component {
                     <Answer
                         currentQuestion={this.props.currentQuestion}
                         onIntroduceAnswer = { this.props.onIntroduceAnswerGame}
+                    />
+                    <Score 
+                        score = {this.props.score}
+                        finished = {this.props.finished}
                     />
                 </div>
             </div>

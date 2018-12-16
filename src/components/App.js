@@ -5,7 +5,7 @@ import Game from './Game'
 
 // Pass the store
 import { connect } from 'react-redux';
-import {changeQuestion, introduceAnswer} from "../redux/actions";
+import {changeQuestion, introduceAnswer, submit} from "../redux/actions";
 
 
 class App extends Component {
@@ -36,6 +36,9 @@ class App extends Component {
             onIntroduceAnswer={ (answer) => {this.props.dispatch(introduceAnswer(answer, this.props.indexCurrentQuestion))}}
             onChangeQuestion = { (change) => { this.props.dispatch(changeQuestion(this.props.indexCurrentQuestion, change))}}
             questionsLength = {this.props.questions.length}
+            finished = {this.props.finished}
+            score = {this.props.score}
+            onSubmit = {()=>this.props.dispatch(submit(this.props.questions))}
         />
       </div>
     );
