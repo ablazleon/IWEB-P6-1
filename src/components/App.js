@@ -19,8 +19,9 @@ class App extends Component {
 
     componentDidMount(){
         // console.log("Only fetch once");
-        console.log("What it is fecthState?");
-        console.log(fetchState());
+
+        // console.log("What it is fecthState?");
+        // console.log(fetchState());
         this.props.dispatch(fetchState());
     }
 

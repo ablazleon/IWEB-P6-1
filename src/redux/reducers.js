@@ -62,7 +62,7 @@ function questions(state=[], action){
                }
             });
         case 'FETCH_STATE_SUCCESS':
-            return action.state.questions;
+            return action.state;
         default:
             return state;
     }

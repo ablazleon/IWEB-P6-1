@@ -1,16 +1,12 @@
 import React from 'react'
 import Content from "./Content";
 import ActionBar from "./ActionBar";
-import {fetchState} from "../redux/actions";
 
 export default class Game extends React.Component {
     // constructor(props) {
     //     super(props);
     //
     // }
-
-
-
 
     render(){
 
@@ -23,8 +19,8 @@ export default class Game extends React.Component {
         // console.log('It gets the onChangeQuestion in Game');
         // console.log(this.props.onChangeQuestion);
 
-        console.log("The object fetch gets to game");
-        console.log(this.props.fetch);
+        // console.log("The object fetch gets to game");
+        // console.log(this.props.fetch);
 
         if(this.props.fetch.fetching){
             return <h3> Wait while we fetch </h3>
