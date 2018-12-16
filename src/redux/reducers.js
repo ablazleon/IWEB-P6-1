@@ -1,9 +1,24 @@
 import { combineReducers } from 'redux';
 
+// auxiliar functions
+
+// sum function
+function add(a,b){
+    return a+b;
+}
+
 // It is created a reducer per every attribute of teh state
 
 function score(state=0, action = {}){
     switch(action.type){
+        case "SUBMIT":
+            return action.payload.questions.map((question)=>{
+
+                // some questions might not have the userAnswer field yet
+                var userAnswer = question.userAnswer ? question.userAnswer : "";
+                return question.answer.toLowerCase()===userAnswer.toLowerCase();
+            })
+            .reduce(add);
         default:
             return state;
     }
@@ -11,6 +26,8 @@ function score(state=0, action = {}){
 
 function finished(state=false, action = {}){
     switch(action.type){
+        case "SUBMIT":
+            return true;
         default:
             return state;
     }

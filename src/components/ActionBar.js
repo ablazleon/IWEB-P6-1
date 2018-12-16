@@ -29,7 +29,11 @@ export default class ActionBar extends React.Component {
                </span>
 
                 <span>
-                <button>
+                <button onClick={ () => {
+                    this.props.onSubmit()
+                    }
+                }
+                >
                     Submit
                 </button>
                </span>

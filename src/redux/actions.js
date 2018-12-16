@@ -13,3 +13,10 @@ export function changeQuestion(index, change){
     }
 }
 
+export function submit(questions){
+	return{
+		type: "SUBMIT",
+		payload: {questions}
+	}
+}
+
