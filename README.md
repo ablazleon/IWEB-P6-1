@@ -20,7 +20,8 @@
     2. Se usa felxbox para centrar los elementos.
     3. Si no se puede pinchar sobre los botones, se configurara el cursor como not allowed.
     4. El producto accede a más mercado si se encuentra en inglés.
-  
+    5. Se piensa en el "responsive design": se adapta el contenedor de las imágenes
+    en función de su resolución.
 -----
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
