@@ -6,12 +6,12 @@
   - [x] Bajarse las preguntas del servidor.
   - [x] Mostar las preguntas en el interfaz web de una en una.
   - [x] Mostar la imagen asociada a la pregunta si la tiene.
-  - [ ] Mostrar en una lista los tips disponibles para cada pregunta si los tiene.
+  - [x] Mostrar en una lista los tips disponibles para cada pregunta si los tiene.
   - [x] Cambiar de pregunta al hacer click en los botones de siguiente/atrás.
   - [x] Permitir al usuario evaluar sus respuestas y calcular su puntuación.
   - [x] Desarrollar la lógica de cambiar de pregunta y evaluar las respuestas
         utilizando Redux.
-  - [ ] Empaquetar la aplicación
+  - [x] Empaquetar la aplicación
   - [x] **1 punto** Personalización de los estilos   
   
     1. Se reflexiona sobre la "usabilidad" de la página al disponer los componentes
@@ -22,6 +22,7 @@
     4. El producto accede a más mercado si se encuentra en inglés.
     5. Se piensa en el "responsive design": se adapta el contenedor de las imágenes
     en función de su resolución.
+    6. Nuestro favicon
 -----
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

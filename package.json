@@ -2,6 +2,7 @@
   "name": "iweb_p6",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "global": "^4.3.2",
     "react": "^16.6.3",
