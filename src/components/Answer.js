@@ -11,12 +11,12 @@ export default class Answer extends React.Component {
         return(
             <div>
                 <div>
-                    <h3> Answer</h3>
+                    <h3>Answer:</h3>
                     <input type="text" value={this.props.currentQuestion.userAnswer || ''}
                            onChange={(e)=>{this.props.onIntroduceAnswer(e.target.value);}}/>
                 </div>
                 <div>
-                    <h3> Tips </h3>
+                    <h3>Tips:</h3>
                     <Tips currentQuestion = {this.props.currentQuestion} />
                 </div>
             </div>
