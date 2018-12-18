@@ -8,16 +8,14 @@ export default class Tips extends React.Component {
         // console.log('It gets the onIntroduceAnswer in Answer');
         // console.log(this.props.onIntroduceAnswer);
         return(
-            <div>
+            <ul>
                 {this.props.currentQuestion.tips.map((tip, i) => {
                     return(
-                        <div key = {'' +i}>
-                            - {tip}
-                        </div>
+                        <li key = {'' +i}> {tip} </li>
                         )
                 })
                 }
-            </div>
+            </ul>
         )
 
     }
